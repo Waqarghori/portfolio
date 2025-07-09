@@ -38,8 +38,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
 }
+
 
 .hero-containt {
     width: 80%;
@@ -80,13 +81,11 @@ header {
 
 .logos ul li a:hover {
     color: #0d6efd;
-    /* Bootstrap primary */
     transition: 0.3s ease;
 }
 
 section {
     scroll-margin-top: 80px;
-    /* navbar height ke barabar ya thoda zyada */
 }
 
 
@@ -109,18 +108,25 @@ section {
 
 
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
 
-    .hero-left,
-    .hero-right {
-        flex: 1 1 100%;
-        align-items: center;
-    }
+    @media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 
-    .hero-img img {
-        width: 80%;
-    }
+  .hero-left, .hero-right {
+    width: 100%;
+    align-items: center;
+  }
+
+  .hero-containt {
+    align-items: center;
+  }
+
+  .hero-img img {
+    width: 80%;
+  }
+}
+
 }
