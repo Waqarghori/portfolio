@@ -101,6 +101,14 @@
             transform: translateY(-8px);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
+        .service-card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
 
         @media (max-width: 768px) {
             .hero {
