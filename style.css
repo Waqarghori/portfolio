@@ -122,6 +122,13 @@
          background-color: #ffffff;
      }
 
+     .card-img-top {
+         height: 300px;
+         object-fit: cover;
+         border-top-left-radius: 0.5rem;
+         border-top-right-radius: 0.5rem;
+     }
+
      .service-card:hover {
          transform: translateY(-8px);
          box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
